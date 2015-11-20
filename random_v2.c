@@ -4,13 +4,14 @@
 
 int main()
 {
-  /*int iRandomNum=0; */
+  int iRandomNum=0;
 
   int i, real_random;  
   time_t curtime;
-  printf("The random number is %d \n", iRandomNum);
 
   curtime = time (NULL);
+  printf("The current time is %d \n",  curtime);
+
   /* int iSrandomNum=rand_r( &iRandomNum); */
   srand(curtime);
 
